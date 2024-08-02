@@ -20,6 +20,13 @@ const Hero = () => {
       opacity: 1,
       delay: 1.5,
     });
+
+    gsap.from(".card-item", {
+      y: -20,
+      stagger: 0.2,
+      ease: "power1.out",
+      opacity: 0,
+    });
   }, []);
 
   return (
@@ -39,7 +46,7 @@ const Hero = () => {
         </h1>
         <p
           id="desc_hero"
-          className="opacity-0 text-sm text-gray-1 text-center px-24 lg:px-[40rem]"
+          className="opacity-0 text-sm text-gray-1 text-center sm:px-28 lg:px-[30rem]"
         >
           Submit better job app — 10x faster. AI cover letter generator, resume
           keyword checker, outreach message writer, and more. Powered by GPT
@@ -50,27 +57,33 @@ const Hero = () => {
         id="card"
         className="flex-center gap-5 px-4 md:px-2 flex flex-wrap md:bg-transparent"
       >
-        <Card
-          title={"AI Cover Letter Generator"}
-          description={
-            "The AI Cover Letter Generator is a tool that uses artificial intelligence algorithms to create personalized cover letters for job applicants."
-          }
-          icon={<IoDocumentOutline size={20} />}
-        />
-        <Card
-          title={"Smart Personalization"}
-          description={
-            "Smart Personalization refers to the use of data and technology to deliver tailored experiences and content to individual customers or users."
-          }
-          icon={<IoRadioSharp size={20} />}
-        />
-        <Card
-          title={"Resume Scanner"}
-          description={
-            "A resume scanner is a software application that uses optical character recognition (OCR) technology to extract and analyze data from resumes."
-          }
-          icon={<IoScan size={20} />}
-        />
+        <div className="card-item">
+          <Card
+            title={"AI Cover Letter Generator"}
+            description={
+              "The AI Cover Letter Generator is a tool that uses artificial intelligence algorithms to create personalized cover letters for job applicants."
+            }
+            icon={<IoDocumentOutline size={20} />}
+          />
+        </div>
+        <div className="card-item">
+          <Card
+            title={"Smart Personalization"}
+            description={
+              "Smart Personalization refers to the use of data and technology to deliver tailored experiences and content to individual customers or users."
+            }
+            icon={<IoRadioSharp size={20} />}
+          />
+        </div>
+        <div className="card-item">
+          <Card
+            title={"Resume Scanner"}
+            description={
+              "A resume scanner is a software application that uses optical character recognition (OCR) technology to extract and analyze data from resumes."
+            }
+            icon={<IoScan size={20} />}
+          />
+        </div>
       </div>
     </section>
   );
