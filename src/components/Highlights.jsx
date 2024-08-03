@@ -4,8 +4,6 @@ import {
   IoGitPullRequest,
   IoGridOutline,
   IoMailSharp,
-  IoRadioSharp,
-  IoScan,
   IoSendSharp,
 } from "react-icons/io5";
 import Button from "./Button";

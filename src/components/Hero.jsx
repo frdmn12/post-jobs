@@ -2,8 +2,13 @@ import { IoDocumentOutline, IoRadioSharp, IoScan } from "react-icons/io5";
 import Card from "./Card";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+  const isMobile = window.innerWidth < 768;
+  
   useGSAP(() => {
     // Animate the heading_hero_1 & heading_hero_2
     gsap.to("#heading_hero_1", {
@@ -22,8 +27,14 @@ const Hero = () => {
     });
 
     gsap.from(".card-item", {
+    scrollTrigger: {
+      trigger: "#card",
+      start: isMobile ? "top 80%" : "top 80%",
+      toggleActions:  isMobile ? "play none none reverse" : 'play',
+      end: isMobile ? "top 20%" : "top 5%",
+    }, 
       y: -20,
-      delay: 2,
+      delay: isMobile ? 0 : 2,
       stagger: 0.5,
       ease: "power1.out",
       opacity: 0,

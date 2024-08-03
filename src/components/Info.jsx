@@ -71,7 +71,7 @@ const Info = () => {
         className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center "
       >
         <img src={info2} className="w-full max-lg:hidden" alt="" />
-        <div className="flex flex-col items-center md:justify-start gap-5">
+        <div className="flex flex-col items-center md:items-start gap-5">
           <h1 className="text-center md:text-left font-bold md:font-semibold text-2xl md:text-5xl md:pr-36">
             Optimize the keywords in your resume
           </h1>
