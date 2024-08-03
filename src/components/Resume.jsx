@@ -7,23 +7,23 @@ import gsap from "gsap";
 const Resume = () => {
   const scrollRef = useRef(null);
 
-//   useGSAP(() => {
-//     const boxes = gsap.utils.toArray(scrollRef.current.children);
+  useGSAP(() => {
+    const boxes = gsap.utils.toArray(scrollRef.current.children);
 
-//     boxes.forEach((box, index) => {
-//         gsap.from(box, {
-//           scrollTrigger: {
-//             trigger: box,
-//             toggleActions: "play none none reverse",
-//             start: "top 50%",
-//             end: "top 20%",
-//           },
-//           stagger: 0.3,
-//           x: index % 2 === 0 ? -70 : 70,
-//           opacity: 0,
-//         });
-//       });
-//   }, [])
+    boxes.forEach((box, index) => {
+        gsap.from(box, {
+          scrollTrigger: {
+            trigger: box,
+            toggleActions: "play none none reverse",
+            start: "top 50%",
+            end: "top 20%",
+          },
+          stagger: 0.3,
+          x: index % 2 === 0 ? -70 : 70,
+          opacity: 0,
+        });
+      });
+  }, [])
   
   return (
       <section
