@@ -20,7 +20,7 @@ const About = () => {
           end: "bottom 20%",
           toggleActions: "play none none reverse",
         },
-        y: 10,
+        y: 5,
         opacity: 0,
         duration: 1,
         delay: index * 0.1,
@@ -42,13 +42,13 @@ const About = () => {
         <h1 className="text-black text-4xl my-5 md:my-16 md:text-[8rem] font-semibold font-sf-pro-display">
           10 X faster
         </h1>
-        <p className="text-black md:px-96">
+        <p className="text-black md:px-96 md:text-xl">
           AI cover letter generator, resume keyword checker, outreach message
           writer, and more. Powered by GPT
         </p>
         <img
           src={about1}
-          className="object-cover max-lg:hidden md:h-auto  md:w-full  "
+          className="object-cover max-lg:hidden md:h-auto  md:w-full lg:w-auto  "
           alt="about1"
         />
       </div>

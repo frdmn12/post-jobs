@@ -46,13 +46,12 @@ const Hero = () => {
         </h1>
         <p
           id="desc_hero"
-          className="opacity-0 text-sm text-gray-1 text-center sm:px-28 lg:px-[30rem]"
+          className="opacity-0 text-sm text-gray-1 text-center sm:px-28 md:text-md lg:px-[30rem]"
         >
           Submit better job app — 10x faster. AI cover letter generator, resume
           keyword checker, outreach message writer, and more. Powered by GPT
         </p>
       </div>
-
       <div
         id="card"
         className="flex-center gap-5 px-4 md:px-2 flex flex-wrap md:bg-transparent"
