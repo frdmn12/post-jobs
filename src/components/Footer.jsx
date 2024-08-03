@@ -26,7 +26,7 @@ const Footer = () => {
       <ul className="my-5 grid grid-cols-2 md:grid-cols-4 items-start text-left">
         {footLists.map((item) => (
           <li key={item} className="text-xs md:text-xl mx-2">
-            <h1 className="font-bold text-2xl mb-3">{item.title}</h1>
+            <h1 className="font-semibold text-2xl mb-3">{item.title}</h1>
             {item.lists.map((list) => (
               <>
                 <p key={list} className="p-0.5 font-normal">
@@ -47,7 +47,7 @@ const Footer = () => {
       </ul>
       <hr className="w-full border-2 my-5 md:my-16 border-gray-800" />
       <div className="flex-center gap-5 font-normal">
-        <p className="text-xs md:text-base">
+        <p className="text-xs md:text-base" key={"1"}>
           Created by {""}
           <a
             href="https://github.com/frdmn12"
@@ -58,11 +58,11 @@ const Footer = () => {
           </a>
         </p>
         {"|"}
-        <p className="text-xs md:text-base">
+        <p className="text-xs md:text-base" key={"2"}>
           Shout out for @Casey Spirid for this amazing design
         </p>
         {"|"}
-        <p className="text-xs md:text-base">@2024</p>
+        <p className="text-xs md:text-base" key={"3"}>@2024</p>
       </div>
     </footer>
   );

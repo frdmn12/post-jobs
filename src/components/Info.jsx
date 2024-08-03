@@ -64,13 +64,13 @@ const Info = () => {
             Try For free Now
           </button>
         </div>
-        <img src={info1} className="w-full max-lg:hidden" alt="" />
+        <img src={info1} className="w-[35rem] max-lg:hidden justify-self-center" alt="" />
       </div>
       <div
         ref={scrollRef2}
         className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center "
       >
-        <img src={info2} className="w-full max-lg:hidden" alt="" />
+        <img src={info2} className="w-[35rem] max-lg:hidden justify-self-center" alt="" />
         <div className="flex flex-col items-center md:items-start gap-5">
           <h1 className="text-center md:text-left font-bold md:font-semibold text-2xl md:text-5xl md:pr-36">
             Optimize the keywords in your resume
