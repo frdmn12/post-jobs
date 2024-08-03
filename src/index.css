@@ -9,6 +9,12 @@
   max-width: 1120px;
 }
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @layer utilities {
   .flex-center {
     @apply flex items-center justify-center;

@@ -23,7 +23,8 @@ const Hero = () => {
 
     gsap.from(".card-item", {
       y: -20,
-      stagger: 0.2,
+      delay: 2,
+      stagger: 0.5,
       ease: "power1.out",
       opacity: 0,
     });
