@@ -15,7 +15,7 @@ const Resume = () => {
           scrollTrigger: {
             trigger: box,
             toggleActions: "play none none reverse",
-            start: "top 50%",
+            start: "top 80%",
             end: "top 20%",
           },
           stagger: 0.3,
@@ -39,11 +39,6 @@ const Resume = () => {
             artificial intelligence and natural language processing to help job
             seekers create customized and effective cover letters.
           </p>
-          {/* <button
-            className={`px-5 md:w-1/3 py-2 border border-black font-bold text-black hover:bg-black hover:text-green-1 rounded-xl m-1 text-xs md:text-base `}
-          >
-            Try For free Now
-          </button> */}
           <Button text={"Create an Account"} />
         </div>
         <img src={resume1} className="w-full max-lg:hidden" alt="" />

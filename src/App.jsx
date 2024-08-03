@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Highlights from "./components/Highlights";
@@ -14,6 +15,7 @@ const App = () => {
       <Highlights />
       <Info />
       <Resume />
+      <Footer />
     </main>
   );
 };
