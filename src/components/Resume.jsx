@@ -17,6 +17,7 @@ const Resume = () => {
           toggleActions: "play none none reverse",
           start: "top 80%",
           end: "top 20%",
+          once: true,
         },
         stagger: 0.3,
         y: index % 2 === 0 ? -70 : 70,

@@ -1,4 +1,4 @@
-import Logo from "../assets/images/PostJobLogo.png";
+import Logo from "../assets/images/Logo.png";
 import About1 from "../assets/images/About-1.png";
 import Info1 from "../assets/images/Illustration-1.png";
 import Info2 from "../assets/images/Illustration-2.png";

@@ -19,6 +19,7 @@ const About = () => {
           start: "top 80%",
           end: "bottom 20%",
           toggleActions: "play none none reverse",
+          once: true,
         },
         y: 5,
         opacity: 0,

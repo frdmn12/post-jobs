@@ -32,6 +32,7 @@ const Hero = () => {
       start: isMobile ? "top 80%" : "top 80%",
       toggleActions:  isMobile ? "play none none reverse" : 'play',
       end: isMobile ? "top 20%" : "top 5%",
+      once: true,
     }, 
       y: -20,
       delay: isMobile ? 0 : 2,

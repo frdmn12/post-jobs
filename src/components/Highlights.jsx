@@ -25,6 +25,7 @@ const Highlights = () => {
         scrollTrigger: {
           trigger: box,
           toggleActions: "play none none reverse",
+          once: true,
         },
         stagger: 1.1,
         scale: 0.2,
@@ -35,6 +36,7 @@ const Highlights = () => {
       scrollTrigger: {
         trigger: "#headers",
         toggleActions: "play none none reverse",
+        once: true,
       },
       opacity: 0,
       y: 50,
@@ -44,6 +46,7 @@ const Highlights = () => {
       scrollTrigger: {
         trigger: "#description",
         toggleActions: "play none none reverse",
+        once: true,
       },
       opacity: 0,
       y: 50,
@@ -54,6 +57,7 @@ const Highlights = () => {
       scrollTrigger: {
         trigger: "#button",
         toggleActions: "play none none reverse",
+        once: true,
       },
       scale: 0.2,
     });
